@@ -1,0 +1,258 @@
+@font-face
+{
+  font-family: FiraCode;
+  src: url(../Font/FiraCode-VariableFont_wght.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FiraCode;
+}
+:root
+{
+    --background: #282C33;
+    --blue: #C778DD;
+    --gray: #ABB2BF;
+    --white: #fff;
+}
+body
+{
+    background: var(--background);
+}
+span
+{
+    display: inline;
+    color: var(--blue);
+}
+
+/* title start */
+
+.projectsPage
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 150px;
+    margin-top: 60px;
+}
+.projectsPage .title
+{
+    width: 100%;
+    height: fit-content;
+}
+.projectsPage .title h1
+{
+    color: var(--white);
+}
+.projectsPage .title p
+{
+    color: var(--gray);
+    margin-top: 15px;
+}
+/* title end */
+
+
+/* "complete sites" section start */
+.projectsPage .completeSites
+{
+    margin-top: 70px;
+}
+.projectsPage .completeSites .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectsPage .completeSites .top h1
+{
+    padding-right: 15px;
+    color: var(--white);
+}
+.projectsPage .completeSites > .bottom
+{
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.projectsPage .completeSites .bottom .card
+{
+    width: 340px;
+    height: fit-content;
+    border: 1px solid var(--gray);
+}
+.projectsPage .completeSites .bottom .card .top
+{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+.projectsPage .completeSites .bottom .card .center
+{
+    width: 100%;
+    padding: 8px;
+    height: fit-content;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray);
+}
+.projectsPage .completeSites .bottom .card .bottom
+{
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+}
+.projectsPage .completeSites .bottom .card .bottom .title
+{
+    color: var(--white);
+    margin-bottom: 16px;
+}
+.projectsPage .completeSites .bottom .card .bottom .content
+{
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+.projectsPage .completeSites .bottom .card .bottom .buttons
+{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.projectsPage .completeSites .bottom .card .bottom .buttons a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+.projectsPage .completeSites .bottom .card .bottom .buttons a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+.projectsPage .completeSites .bottom .card .bottom .buttons a:nth-child(2)
+{
+    border: 1px solid var(--gray);
+}
+.projectsPage .completeSites .bottom .card .bottom .buttons a:nth-child(2):hover
+{
+    background: rgba(171, 178, 191, 0.20);
+}
+/* "complete-sites" section end */
+
+
+/* "small-projects" section start */
+.projectsPage .smallProjects
+{
+    margin-top: 80px;
+    margin-bottom: 190px;
+}
+.projectsPage .smallProjects .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectsPage .smallProjects .top h1
+{
+    padding-right: 15px;
+    color: var(--white);
+}
+.projectsPage .smallProjects > .bottom
+{
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.projectsPage .smallProjects .bottom .card
+{
+    width: 340px;
+    height: fit-content;
+    border: 1px solid var(--gray);
+}
+.projectsPage .smallProjects .bottom .card .center
+{
+    width: 100%;
+    padding: 8px;
+    height: fit-content;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray);
+}
+.projectsPage .smallProjects .bottom .card .bottom
+{
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+}
+.projectsPage .smallProjects .bottom .card .bottom .title
+{
+    color: var(--white);
+    margin-bottom: 16px;
+}
+.projectsPage .smallProjects .bottom .card .bottom .content
+{
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+.projectsPage .smallProjects .bottom .card .bottom .buttons
+{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.projectsPage .smallProjects .bottom .card .bottom .buttons a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+.projectsPage .smallProjects .bottom .card .bottom .buttons a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+.projectsPage .smallProjects .bottom .card .bottom .buttons a:nth-child(2)
+{
+    border: 1px solid var(--gray);
+}
+.projectsPage .smallProjects .bottom .card .bottom .buttons a:nth-child(2):hover
+{
+    background: rgba(171, 178, 191, 0.20);
+}
+
+
+/* responsive start */
+@media screen and (max-width: 767px) {
+    .projectsPage
+    {
+        padding: 0 16px;
+    }
+    .projectsPage .completeSites
+    {
+        margin-top: 40px;
+    }
+    .projectsPage .completeSites > .bottom
+    {
+        margin-top: 30px;
+    }
+}

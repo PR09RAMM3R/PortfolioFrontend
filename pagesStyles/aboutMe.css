@@ -1,0 +1,248 @@
+@font-face
+{
+  font-family: FiraCode;
+  src: url(../Font/FiraCode-VariableFont_wght.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FiraCode;
+}
+:root
+{
+    --background: #282C33;
+    --blue: #C778DD;
+    --gray: #ABB2BF;
+    --white: #fff;
+}
+body
+{
+    background: var(--background);
+}
+span
+{
+    display: inline;
+    color: var(--blue);
+}
+.aboutMePage
+{
+    padding: 0 150px;
+}
+
+/* title start */
+
+.aboutMePage .title
+{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+}
+.aboutMePage .title h1
+{
+    color: var(--white);
+}
+.aboutMePage .title p
+{
+    color: var(--gray);
+    margin-top: 15px;
+}
+/* title end */
+
+
+/* About start */
+.aboutMePage .about
+{
+    width: 100%;
+    margin-top: 50px;
+    height: fit-content;
+}
+.aboutMePage .about .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.aboutMePage .about .top h1
+{
+    color: var(--white);
+    width: 200px;
+}
+.aboutMePage .about .bottom
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.aboutMePage .about .bottom .content
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 30px;
+}
+.aboutMePage .about .bottom .content p
+{
+    color: var(--gray);
+}
+.aboutMePage .about .bottom .content a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+.aboutMePage .about .bottom .content a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+.aboutMePage .about .bottom .img
+{
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    margin-top: -40px;
+}
+/* About end */
+
+
+/* Skills Start */
+.aboutMePage .skills
+{
+    width: 100%;
+    margin-top: 110px;
+    height: fit-content;
+}
+.aboutMePage .skills .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    color: var(--white);
+}
+.aboutMePage .skills .bottom
+{
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.aboutMePage .skills .sCard
+{
+    width: 180px;
+    height: fit-content;
+    border: 1px solid var(--gray);
+}
+.aboutMePage .skills .sCard p:first-child
+{
+    color: var(--white);
+    border-bottom: 1px solid var(--gray);
+    padding: 8px;
+}
+.aboutMePage .skills .sCard p:last-child
+{
+    color: var(--gray);
+    padding: 8px;
+}
+/* Skills end */
+
+
+/* fan-facts start */
+.aboutMePage .softskills
+{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 160px;
+    height: fit-content;
+}
+.aboutMePage .softskills .top
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    color: var(--white);
+}
+.aboutMePage .softskills .bottom
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.aboutMePage .softskills .bottom .sskills
+{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.aboutMePage .softskills .bottom .sskills p
+{
+    padding: 8px;
+    width: 350px;
+    border: 1px solid var(--gray);
+    color: var(--white);
+}
+.aboutMePage .softskills .bottom .img
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive start */
+@media screen and (max-width: 767px) {
+    .aboutMePage
+    {
+        padding: 0 16px;
+    }
+    .aboutMePage .about
+    {
+        margin-top: 10px;
+    }
+    .aboutMePage .about .bottom
+    {
+        flex-direction: column;
+    }
+    .aboutMePage .about .bottom .content
+    {
+        width: 100%;
+    }
+    .aboutMePage .about .bottom .img
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .aboutMePage .skills .bottom
+    {
+        justify-content: center;
+    }
+    .aboutMePage .softskills .bottom
+    {
+        justify-content: center;
+    }
+    .aboutMePage .softskills .bottom .img
+    {
+        display: none;
+    }
+}

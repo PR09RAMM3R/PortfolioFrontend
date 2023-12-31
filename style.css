@@ -1,0 +1,763 @@
+@font-face
+{
+  font-family: FiraCode;
+  src: url(./Font/FiraCode-VariableFont_wght.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FiraCode;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --background: #282C33;
+    --blue: #C778DD;
+    --gray: #ABB2BF;
+    --white: #fff;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cream);
+  border-radius: 10px;
+}
+body
+{
+    background: var(--background);
+}
+
+/* hamburger open start */
+.hambergurMenuActive
+{
+    width: inherit;
+    height: 100vh;
+    left: -100%;
+    display: flex;
+    z-index: 111111;
+    transition: .5s;
+    position: absolute;
+    flex-direction: column;
+    padding: 0 16px 16px 16px;
+    background: var(--background);
+    justify-content: space-between;
+}
+.hambergurMenuActive .top
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hambergurMenuActive .center ul
+{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+.hambergurMenuActive .center ul li a
+{
+    font-size: 32px;
+    color: var(--white);
+    text-decoration: none;
+}
+.hambergurMenuActive .center .button a
+{
+    display: block;
+    transition: .5s;
+    font-size: 32px;
+    padding: 8px 16px;
+    width: fit-content;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+}
+.hambergurMenuActive .bottom
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hambergurMenuActive .bottom .icons
+{
+    width: 100%;
+    gap: 15px;
+    padding: 5px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.hambergurMenuActive .bottom svg
+{
+    width: 40px;
+    height: 40px;
+}
+/* hamburger open end */
+
+
+/* header start */
+.container
+{
+    width: 100%;
+    padding: 0 150px;
+    background: var(--background);
+}
+svg:hover path
+{
+    fill: var(--white);
+}
+span
+{
+    display: inline;
+    color: var(--blue);
+}
+.sidebar
+{
+    width: 100px;
+    height: 42vh;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(-150px);
+}
+.sidebar .icons
+{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar img
+{
+    width: 28px;
+}
+.sidebar hr
+{
+    transform: rotate(90deg);
+    width: 50vh;
+    border-color: var(--gray);
+}
+
+/* Header start */
+
+header
+{
+    height: 100vh;
+}
+nav
+{
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: sticky;
+    background: var(--background);
+    justify-content: space-between;
+    padding: 0 150px;
+}
+nav .left
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .left .hamburgerMenu
+{
+    display: none;
+}
+nav .right
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul
+{
+    width: 100%;
+    display: flex;
+    padding-left: 40px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a
+{
+    color: var(--gray);
+    text-decoration: none;
+}
+nav ul li a:hover
+{
+    color: var(--white);
+}
+nav .right .button a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+nav .right .button a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+header .top
+{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+header .top .left
+{
+    width: 40%;
+    margin-top: 150px;
+}
+header .top .left h1
+{
+    color: var(--white);
+}
+header .top .left p
+{
+    color: var(--gray);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+header .top .left a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+header .top .left a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+header .top .right
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .top .right .workPlace
+{
+    width: 80%;
+    border: 1px solid var(--gray);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .top .right .workPlace .sqr
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    background: var(--blue);
+}
+header .top .right .workPlace p
+{
+    color: var(--white);
+}
+header .bottom
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .bottom h2
+{
+    width: fit-content;
+    color: var(--white);
+    padding: 20px 32px;
+    border: 1px solid var(--white);
+}
+header .bottom .qoute::before
+{
+    content: '';
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    left: 330px;
+    bottom: 190px;
+    background-size: cover;
+    background: url(./imgs/quote.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background);
+}
+header .bottom .qoute::after
+{
+    content: '';
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    right: 330px;
+    bottom: 115px;
+    background-size: cover;
+    background: url(./imgs/quote.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background);
+}
+header .bottom .quotes
+{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+/* Header end */
+
+/* Section start */
+
+.projects
+{
+    width: 100%;
+    height: fit-content;
+}
+.projects .top
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.projects .top .left
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .top .left hr
+{
+    width: 100%;
+    border-color: var(--blue);
+}
+.projects .top .left h1
+{
+    padding-right: 15px;
+    color: var(--white);
+}
+.projects .top .right
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.projects .top .right a
+{
+    color: var(--gray);
+    text-decoration: none;
+}
+.projects .top .right a:hover
+{
+    color: var(--white);
+}
+.projects > .bottom
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects .bottom .card
+{
+    width: 340px;
+    height: fit-content;
+    border: 1px solid var(--gray);
+}
+.projects .bottom .card .top
+{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+.projects .bottom .card .center
+{
+    width: 100%;
+    padding: 8px;
+    height: fit-content;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray);
+}
+.projects .bottom .card .bottom
+{
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+}
+.projects .bottom .card .bottom .title
+{
+    color: var(--white);
+    margin-bottom: 16px;
+}
+.projects .bottom .card .bottom .content
+{
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+.projects .bottom .card .bottom .buttons
+{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.projects .bottom .card .bottom .buttons a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+.projects .bottom .card .bottom .buttons a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+.projects .bottom .card .bottom .buttons a:nth-child(2)
+{
+    border: 1px solid var(--gray);
+}
+.projects .bottom .card .bottom .buttons a:nth-child(2):hover
+{
+    background: rgba(171, 178, 191, 0.20);
+}
+
+/* Projects end */
+
+/* Skills Start */
+.skills
+{
+    width: 100%;
+    height: fit-content;
+    margin-top: 120px;
+    height: fit-content;
+}
+.skills .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+.skills .top hr
+{
+    width: 100%;
+    margin-left: 15px;
+    border-color: var(--blue);
+}
+.skills .bottom
+{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.skills .img
+{
+    width: 30%;
+    height: 100%;
+}
+.skills .skillCards
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 40px;
+}
+.skills .skillCards .left,
+.skills .skillCards .center,
+.skills .skillCards .right
+{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.skills .skillCards .sCard
+{
+    width: 180px;
+    height: fit-content;
+    border: 1px solid var(--gray);
+}
+.skills .skillCards .sCard p:first-child
+{
+    color: var(--white);
+    border-bottom: 1px solid var(--gray);
+    padding: 8px;
+}
+.skills .skillCards .sCard p:last-child
+{
+    color: var(--gray);
+    padding: 8px;
+}
+/* Skills end */
+
+
+/* About start */
+.about
+{
+    width: 100%;
+    margin-top: 50px;
+    height: fit-content;
+}
+.about .top
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.about .top h1
+{
+    color: var(--white);
+    width: 200px;
+}
+.about .top hr
+{
+    width: 80%;
+    margin-left: 15px;
+    border-color: var(--blue);
+}
+.about .bottom
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.about .bottom .content
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 30px;
+}
+.about .bottom .content p
+{
+    color: var(--gray);
+}
+.about .bottom .content a
+{
+    width: fit-content;
+    padding: 8px 16px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+.about .bottom .content a:hover
+{
+    background: rgba(199, 120, 221, 0.20);
+    transition: .5s;
+}
+.about .bottom .img
+{
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    margin-top: -40px;
+}
+/* About end */
+
+/* Contact start */
+.contact
+{
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact .top
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    justify-content: space-between;
+}
+.contact .top h1
+{
+    color: var(--white);
+    width: 200px;
+}
+.contact .top hr
+{
+    width: 100%;
+    margin-left: 15px;
+    border-color: var(--blue);
+}
+.contact .bottom
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+.contact .bottom .left
+{
+    width: 45%;
+    height: fit-content;
+    color: var(--gray);
+}
+.contact .bottom .right
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+.contact .bottom .right .massageMe
+{
+    padding: 16px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid var(--gray);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact .bottom .right .massageMe .links
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact .bottom .right .massageMe a
+{
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    text-decoration: none;
+    gap: 5px;
+}
+.contact .bottom .right .massageMe a:hover
+{
+    color: var(--white);
+}
+.contact .bottom .right .massageMe a:hover svg
+{
+    fill: var(--white);
+}
+/* Contact end */
+
+/* footer start */
+footer
+{
+    width: 100%;
+    padding: 32px 150px;
+    height: fit-content;
+    border-top: 1px solid var(--gray);
+}
+footer .top
+{
+    width: 100%;
+    display: flex;
+}
+footer .top .left
+{
+    width: 50%;
+}
+footer .top .left .nl
+{
+    gap: 24px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+footer .top .left .nl a
+{
+    color: var(--gray);
+    font-size: 16px;
+    text-decoration: none;
+}
+footer .top .left a
+{
+    color: var(--white);
+    font-size: 14px;
+}
+footer .top .left p
+{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+footer .top .right
+{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+footer .top .right .mlinks
+{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-size: 24px;
+}
+footer .top .right .mlinks a
+{
+    text-decoration: none;
+}
+footer .bottom
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    color: var(--gray);
+}

@@ -1,0 +1,214 @@
+@media screen and (max-width: 767px) {
+    .hambergurMenuActive.active
+    {
+        left: 0;
+    }
+    .container
+    {
+        padding: 0 16px;
+    }
+    .sidebar
+    {
+        display: none;
+    }
+    /* header start */
+    nav
+    {
+        width: 100%;
+        position: sticky;
+        padding: 0 16px;
+    }
+    nav .left
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav .right
+    {
+        display: none;
+    }
+    nav .left .hamburgerMenu
+    {
+        display: block;
+    }
+    header .top
+    {
+        flex-direction: column;
+    }
+    header .top .left
+    {
+        width: 100%;
+        margin-top: 35px;
+    }
+    header .top .left p
+    {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    header .top .right
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+    header .top .right img
+    {
+        width: 100%;
+    }
+    header .top .right .workPlace
+    {
+        width: 100%;
+    }
+    header .bottom
+    {
+        display: none;
+    }
+    /* header end */
+
+    /* projects start */
+    .projects
+    {
+        height: fit-content;
+        margin-top: 40px;
+    }
+    .projects .top
+    {
+        margin-bottom: 16px;
+    }
+    .projects .top hr
+    {
+        display: none;
+    }
+    .projects .top .right a
+    {
+        color: var(--white);
+    }
+    .projects .bottom
+    {
+        gap: 16px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skills
+    {
+        margin-top: 50px;
+    }
+    .skills hr
+    {
+        display: none;
+    }
+    .skills .img
+    {
+        display: none;
+    }
+    .skills .bottom
+    {
+        margin-top: 0px;
+    }
+    .skills .skillCards
+    {
+        gap: 8px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills .skillCards .sCard
+    {
+        width: 100%;
+    }
+    .skills .skillCards .left,
+    .skills .skillCards .center,
+    .skills .skillCards .right
+    {
+        gap: 8px;
+        width: 100%;
+    }
+    .about
+    {
+        margin-top: 0;
+    }
+    .about hr
+    {
+        display: none;
+    }
+    .about .bottom
+    {
+        flex-direction: column;
+    }
+    .about .bottom .content
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .about .bottom .img
+    {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    /* about end */
+
+    /* contact start */
+    .contact
+    {
+        margin-top: 60px;
+    }
+    .contact .top
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact .top hr
+    {
+        display: none;
+    }
+    .contact .bottom
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .bottom .left
+    {
+        width: 100%;
+    }
+    .contact .bottom .right
+    {
+        width: 100%;
+    }
+    .contact .bottom .right .massageMe
+    {
+        width: 100%;
+    }
+    /* contact end */
+
+    /* footer start */
+    footer
+    {
+        padding: 28px 16px;
+    }
+    footer .top
+    {
+        flex-direction: column;
+    }
+    footer .top .left
+    {
+        width: 100%;
+    }
+    footer .top .left .nl
+    {
+        gap: 8px;
+    }
+    footer .top .left .nl img
+    {
+        height: 38px;
+    }
+    footer .top .right
+    {
+        margin-top: 10px;
+        justify-content: start;
+    }
+    footer .bottom
+    {
+        margin-top: 28px;
+    }
+    /* footer end */
+}
