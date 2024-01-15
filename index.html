@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Site</title>
+    <title>Asadbek's Portfolio Site - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./aos/aos.css">
     <link rel="stylesheet" href="./responsive/responsive.css">
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <style>
+        .typed-cursor {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -49,7 +55,7 @@
             </div>
         </div>
         <div class="left">
-            <a href="index.html">
+            <a href="./index.html">
                 <img src="./imgs/logo.png" alt="" height="50px" loading="lazy">
             </a>
             <div class="hamburgerMenu">
@@ -58,7 +64,7 @@
         </div>
         <div class="right">
             <ul>
-                <li><a href="./index.html"><span>#</span>home</a></li>
+                <li><a href="./index.html" class="active"><span>#</span>home</a></li>
                 <li><a href="./pages/projects.html"><span>#</span>works</a></li>
                 <li><a href="./pages/aboutMe.html"><span>#</span>about-me</a></li>
                 <li><a href="index.html#contact"><span>#</span>contacts</a></li>
@@ -94,9 +100,9 @@
         <header>
             <div class="top">
                 <div class="left">
-                    <h1>Asadbek is <span>Full Stack Web Developer</span></h1>
+                    <h1 id="htext"></h1>
                     <p>PHP Forever :)</p>
-                    <a href="./pages/contact.html">Contact me!</a>
+                    <a href="index.html#contact">Contact me!</a>
                 </div>
                 <div class="right">
                     <img src="./imgs/headerImg.png" alt="Header Img" width="460px" loading="lazy">
@@ -122,11 +128,11 @@
                     <hr>
                 </div>
                 <div class="right">
-                    <a href="#">view all ~~></a>
+                    <a href="./pages/projects.html">view all ~~></a>
                 </div>
             </div>
             <div class="bottom">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="top">
                         <img src="./imgs/projectImg.jpeg" alt="Project Img" width="100%" loading="lazy">
                     </div>
@@ -146,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="150">
                     <div class="top">
                         <img src="./imgs/projectImg1.png" alt="Project Img" width="100%" loading="lazy">
                     </div>
@@ -165,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
                     <div class="top">
                         <img src="./imgs/projectImg2.png" alt="Project Img" width="100%" loading="lazy">
                     </div>
@@ -197,27 +203,27 @@
                 </div>
                 <div class="skillCards">
                     <div class="left">
-                        <div class="sCard">
+                        <div class="sCard" data-aos="fade-up-right">
                             <p>Languages</p>
                             <p>Javascipt PHP</p>
                         </div>
                     </div>
                     <div class="center">
-                        <div class="sCard">
+                        <div class="sCard" data-aos="fade-up" data-aos-delay="100">
                             <p>Database</p>
                             <p>MySql</p>
                         </div>
-                        <div class="sCard">
+                        <div class="sCard" data-aos="fade-up" data-aos-delay="150">
                             <p>Other</p>
                             <p>HTML CSS SCSS</p>
                         </div>
                     </div>
                     <div class="right">
-                        <div class="sCard">
+                        <div class="sCard" data-aos="fade-up-left" data-aos-delay="200">
                             <p>Tools</p>
                             <p>VSCode Git Font</p>
                         </div>
-                        <div class="sCard">
+                        <div class="sCard" data-aos="fade-up-left" data-aos-delay="250">
                             <p>Fremworks and Libraris</p>
                             <p>React.js Impress.js Tilt.js AOS.js Typed.js Laravel</p>
                         </div>
@@ -231,11 +237,12 @@
                 <hr>
             </div>
             <div class="bottom">
-                <div class="content">
-                    <p>Hello, i’m Asadbek!<br><br>I'm a self-taught full-stack developer based in Ferghana, Uzbekistan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.<br><br>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
-                    <a href="#">Read More -></a>
+                <div class="content" data-aos="fade-up">
+                    <p id="about"></p>
+                    <!-- Hello, i'm Asadbek!<br><br>I'm a self-taught full-stack developer based in Ferghana, Uzbekistan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.<br><br>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks. -->
+                    <a href="./pages/aboutMe.html">Read More -></a>
                 </div>
-                <div class="img">
+                <div class="img" data-aos="fade-up-left">
                     <img src="./imgs/aboutImg.png" alt="">
                 </div>
             </div>
@@ -247,10 +254,11 @@
             </div>
             <div class="bottom">
                 <div class="left">
-                    <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+                    <!-- I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me -->
+                    <p id="contactText"></p>
                 </div>
                 <div class="right">
-                    <div class="massageMe">
+                    <div class="massageMe" data-aos="fade-up">
                         <p>Massage me here</p>
                         <div class="links">
                             <a href="mailto:asadbekahadov00@gmail.com">
@@ -311,5 +319,40 @@
         </div>
     </footer>
     <script src="./main.js"></script>
+    <script src="./aos/aos.js"></script>
+    <script src="./typedJs/typed.umd.js"></script>
+    <script>
+        new Typed('#htext', {
+            strings: ["Asadbek is <span>Full Stack Web Developer</span>"],
+            typeSpeed: 50,
+            startDelay: 500,
+        });
+
+        const viewportObserver1 = new IntersectionObserver((entries, observer) => {
+            if (entries[0].isIntersecting) {
+                new Typed('#contactText', {
+                    strings: ["I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me"],
+                    typeSpeed: 10,
+                });
+                observer.unobserve(document.querySelector('#contactText'))
+            }
+        })
+        viewportObserver1.observe(document.querySelector('#contactText'))
+
+
+        const viewportObserver = new IntersectionObserver((entries, observer) => {
+            if (entries[0].isIntersecting) {
+                var typed2 = new Typed('#about', {
+                    strings: ["Hello, i'm Asadbek!<br><br>I'm a self-taught full-stack developer based in Ferghana, Uzbekistan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.<br><br>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."],
+                    typeSpeed: 10,
+                });
+                observer.unobserve(document.querySelector('#about'))
+            }
+        })
+        viewportObserver.observe(document.querySelector('#about'))
+    </script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 </html>

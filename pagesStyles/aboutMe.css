@@ -29,6 +29,7 @@ span
 .aboutMePage
 {
     padding: 0 150px;
+    overflow: hidden;
 }
 
 /* title start */
@@ -38,6 +39,7 @@ span
     width: 100%;
     height: fit-content;
     margin-top: 60px;
+    animation: topLeft 1s ease forwards;
 }
 .aboutMePage .title h1
 {
@@ -47,6 +49,19 @@ span
 {
     color: var(--gray);
     margin-top: 15px;
+}
+@keyframes topLeft
+{
+    0%
+    {
+        transform: translate(-20%, 50%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0%);
+        opacity: 1;
+    }
 }
 /* title end */
 
@@ -112,6 +127,20 @@ span
     display: flex;
     justify-content: end;
     margin-top: -40px;
+    animation: topRight 1s ease forwards;
+}
+@keyframes topRight
+{
+    0%
+    {
+        transform: translate(30%, 30%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0%);
+        opacity: 1;
+    }
 }
 /* About end */
 

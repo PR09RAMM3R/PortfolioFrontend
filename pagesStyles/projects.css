@@ -40,6 +40,7 @@ span
 {
     width: 100%;
     height: fit-content;
+    animation: topRight 1s ease forwards;
 }
 .projectsPage .title h1
 {
@@ -49,6 +50,16 @@ span
 {
     color: var(--gray);
     margin-top: 15px;
+}
+@keyframes topRight {
+    0%{
+        opacity: 0;
+        transform: translate(-20%, 40%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0%);
+    }
 }
 /* title end */
 
@@ -65,6 +76,7 @@ span
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: topRight 1s ease forwards;
 }
 .projectsPage .completeSites .top h1
 {
