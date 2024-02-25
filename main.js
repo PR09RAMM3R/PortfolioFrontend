@@ -7,7 +7,6 @@ window.addEventListener('mousemove', function (e) {
   });
 });
 
-
 // Burger menu codes
 
 let menu = document.querySelector('.hamburgerMenu'),
